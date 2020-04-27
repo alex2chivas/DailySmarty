@@ -14,8 +14,11 @@
 
         .recent-posts-post {
             @include grid-one (grid, none, none, none, space-evenly);
-            grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 42px;
+
+            @media screen and (min-width: 700px) {
+                grid-template-columns: 1fr 1fr 1fr
+            }
         }
 
     }
