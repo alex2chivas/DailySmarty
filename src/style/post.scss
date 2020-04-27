@@ -1,0 +1,45 @@
+.post-topic {
+    margin: 0 4px;
+    width: 100%;
+}
+
+.recent-posts {
+    @include grid-one(grid, none, none, none, none);
+
+    .recent-posts-wrapper {
+        @include grid-one(grid, none, none, none, center)
+    }
+}
+
+.result-post-links {
+    display: flex;
+    justify-content: space-between;
+
+    .no-content {
+        color: $color-gray-one;
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .post-link {
+        min-height: 70px;
+        display: flex;
+        flex-direction: row;
+        flex-basis: 205px;
+        margin-right: 25px;
+
+        .post-link-box {
+            color: $color-gray-three;
+            min-width: 70px;
+            background-color: $color-gray-two;
+            margin-right: 16px;
+        }
+
+        .post-link-link a {
+            color: $color-gray-one;
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration: none;
+        }
+    }
+}

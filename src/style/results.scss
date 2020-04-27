@@ -1,0 +1,43 @@
+.results {
+    height: 100%;
+    width: 66vw;
+    margin-top: 52px;
+    grid-gap: 25px;
+    margin-bottom: 30px;
+
+    @include grid-one(grid, none, none, none, none);
+}
+
+.results-posts {
+    height: 100%;
+
+    .results-posts-wrapper {
+        .results-posts-posts {
+            @include grid-one(grid, none, none, none, stretch);
+            grid-row-gap: 20px;
+        }
+    }
+}
+
+.result-post {
+    @include grid-one(grid, none, space-between, none, none);
+    grid-row-gap: 20px;
+
+    .result-posts-topics>* {
+        color: $color-blue-one;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: normal;
+    }
+
+    .result-post-title a {
+        color: $color-gray-one;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: none;
+    }
+
+    .result-posts-links {
+        display: flex;
+    }
+}

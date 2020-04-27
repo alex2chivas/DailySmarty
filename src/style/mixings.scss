@@ -1,0 +1,7 @@
+@mixin grid-one($type, $position, $position-one, $position-two, $position-three) {
+    display: $type;
+    justify-items: $position;
+    align-content: $position-one;
+    justify-items: $position-two;
+    justify-content: $position-three;
+}

@@ -1,0 +1,22 @@
+.recent-posts {
+    @include grid-one (grid, none, center, none, none);
+
+    .recent-posts-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .recent-post-heading {
+            color: $color-blue-one;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .recent-posts-post {
+            @include grid-one (grid, none, none, none, space-evenly);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 42px;
+        }
+
+    }
+}
